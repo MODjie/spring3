@@ -14,5 +14,9 @@ public class JunitTest {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("aopContext.xml");
 		AopSrc zzq = (AopSrc) context.getBean("as");
 		zzq.delete();
+		int a = 0;
+		if (a==1) {
+			System.out.println(12);
+		}
 	}
 }
