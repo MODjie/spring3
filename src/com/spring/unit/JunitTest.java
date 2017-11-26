@@ -16,7 +16,7 @@ public class JunitTest {
 		zzq.delete();
 		int a = 0;
 		if (a==1) {
-			System.out.println(12);
+			System.out.println(11231231);
 		}
 	}
 }
