@@ -17,6 +17,8 @@ public class JunitTest {
 		int a = 0;
 		if (a==1) {
 			System.out.println(12);
+		}if (a==2) {
+			System.out.println("3333333333");
 		}
 	}
 }
