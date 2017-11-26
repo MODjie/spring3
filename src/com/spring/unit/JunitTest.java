@@ -16,9 +16,9 @@ public class JunitTest {
 		zzq.delete();
 		int a = 0;
 		if (a==1) {
-			System.out.println(12);
-		}if (a==2) {
-			System.out.println("3333333333");
+			System.out.println("zzzzzz");
+		}else if (a==2) {
+			System.out.println("yyyy");
 
 		}
 	}
