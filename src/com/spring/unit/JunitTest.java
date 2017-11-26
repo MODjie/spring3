@@ -15,7 +15,7 @@ public class JunitTest {
 		AopSrc zzq = (AopSrc) context.getBean("as");
 		zzq.delete();
 		int a = 0;
-		if (a==1) {
+		if (a==3) {
 			System.out.println("zzzzzz");
 		}else if (a==2) {
 			System.out.println("yyyy");
