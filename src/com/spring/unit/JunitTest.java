@@ -19,6 +19,7 @@ public class JunitTest {
 			System.out.println(12);
 		}if (a==2) {
 			System.out.println("3333333333");
+
 		}
 	}
 }
