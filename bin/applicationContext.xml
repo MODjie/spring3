@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="u" class="spring01.User">
+		<property name="name" value="小白" />		
+	</bean>
+	<!-- UserDao -->
+	<bean id="ud" class="com.spring.dao.UserDao">
+			
+	</bean>
+	<!-- UserService -->
+	<bean id="us" class="com.spring.service.UserService">
+			<property name="ud" >
+			    <ref bean="ud"/>
+			</property>
+	</bean>
+	<bean id="person" class="spring01.Person">
+	    <property name="name">
+	        <list>
+	            <value>杰哥</value>
+	            <value>骚男</value>
+	            <value>厂长</value>
+	            <value>五五开</value>
+	        </list>
+	    </property>
+	</bean>
+	<bean id="run1" class="spring01.Run">
+	    <constructor-arg index="0" value="观日路"></constructor-arg>
+	    <constructor-arg index="1" ref="person"></constructor-arg>
+	</bean>
+	
+</beans>
